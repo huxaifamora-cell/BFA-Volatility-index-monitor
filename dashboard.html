@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BFA · Volatility Signal Monitor</title>
+<title>BFA · Volatility Index Monitor</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Mono:wght@300;400&family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -718,7 +718,7 @@
               <th>H1 Status</th>
               <th>Min Lot</th>
               <th>Min Margin</th>
-              <th>Vol Level</th>
+              <th>Volatility</th>
               <th>H4 Trend</th>
               <th>D1 Trend</th>
               <th>Last Signal</th>
@@ -732,7 +732,7 @@
 
   <!-- FOOTER -->
   <div class="footer">
-    <div class="footer-brand">BFA · Volatility Intelligence</div>
+    <div class="footer-brand">BFA · Volatility Index Intelligence</div>
     <div class="footer-note">MT5 · REAL-TIME · WSS FEED</div>
   </div>
 </div>
@@ -974,7 +974,7 @@ function renderSignalCard(s, idx) {
           <div class="meta-val">$${s.minMargin.toFixed(2)}</div>
         </div>
         <div class="meta-item">
-          <div class="meta-key">Vol Level</div>
+          <div class="meta-key">Volatility</div>
           <div class="meta-val"><span class="vol-badge ${volBadgeClass(s.volLevel)}">${s.volLevel || 'Unknown'}</span></div>
         </div>
         <div class="meta-item">
