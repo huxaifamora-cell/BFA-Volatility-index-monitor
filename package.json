@@ -1,7 +1,7 @@
 {
   "name": "bfa-volatility-monitor-server",
   "version": "1.0.0",
-  "description": "BFA Volatility Index Signal Server — separate from Boom/Crash",
+  "description": "BFA Volatility Index Signal Server",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
